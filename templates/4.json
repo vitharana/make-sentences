@@ -1,0 +1,152 @@
+[
+{
+"question_number": 1,
+"full_sentence_template": ["Photosynthesis", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "energy", "[BLANK]", "[BLANK]", "chemical", "[BLANK]", "for", "plants."],
+"blank_answers": {
+"1": "allows",
+"2": "organisms",
+"3": "to",
+"4": "convert",
+"6": "into",
+"7": "usable",
+"9": "bonds"
+},
+"distractor_word": "absorbing",
+"all_shuffled_words": ["convert", "bonds", "allows", "into", "absorbing", "usable", "organisms", "to"]
+},
+{
+"question_number": 2,
+"full_sentence_template": ["Online", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "students", "[BLANK]", "[BLANK]", "flexible", "[BLANK]", "academic", "schedules."],
+"blank_answers": {
+"1": "education",
+"2": "frequently",
+"3": "provides",
+"4": "busy",
+"6": "with",
+"7": "highly",
+"9": "managing"
+},
+"distractor_word": "permits",
+"all_shuffled_words": ["frequently", "permits", "education", "highly", "provides", "with", "managing", "busy"]
+},
+{
+"question_number": 3,
+"full_sentence_template": ["Many", "[BLANK]", "[BLANK]", "[BLANK]", "urban", "[BLANK]", "[BLANK]", "[BLANK]", "severe", "[BLANK]", "traffic", "congestion."],
+"blank_answers": {
+"1": "modern",
+"2": "societies",
+"3": "in",
+"5": "centers",
+"6": "must",
+"7": "address",
+"9": "worsening"
+},
+"distractor_word": "congested",
+"all_shuffled_words": ["address", "societies", "congested", "must", "in", "worsening", "centers", "modern"]
+},
+{
+"question_number": 4,
+"full_sentence_template": ["Marine", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "rising", "[BLANK]", "temperatures", "[BLANK]", "coral", "reefs."],
+"blank_answers": {
+"1": "biologists",
+"2": "warn",
+"3": "that",
+"4": "rapidly",
+"5": "ocean",
+"7": "will",
+"9": "devastate"
+},
+"distractor_word": "threatens",
+"all_shuffled_words": ["ocean", "will", "warn", "threatens", "devastate", "biologists", "rapidly", "that"]
+},
+{
+"question_number": 5,
+"full_sentence_template": ["Volcanic", "[BLANK]", "[BLANK]", "[BLANK]", "release", "[BLANK]", "[BLANK]", "[BLANK]", "can", "[BLANK]", "global", "climates."],
+"blank_answers": {
+"1": "eruptions",
+"2": "often",
+"3": "which",
+"5": "massive",
+"6": "ash",
+"7": "clouds",
+"9": "alter"
+},
+"distractor_word": "changing",
+"all_shuffled_words": ["eruptions", "clouds", "alter", "often", "ash", "which", "changing", "massive"]
+},
+{
+"question_number": 6,
+"full_sentence_template": ["Ancient", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "vital", "[BLANK]", "[BLANK]", "[BLANK]", "early", "human", "trade."],
+"blank_answers": {
+"1": "civilizations",
+"2": "developed",
+"3": "rivers",
+"4": "as",
+"6": "conduits",
+"7": "for",
+"8": "expanding"
+},
+"distractor_word": "commercially",
+"all_shuffled_words": ["for", "rivers", "developed", "commercially", "expanding", "civilizations", "as", "conduits"]
+},
+{
+"question_number": 7,
+"full_sentence_template": ["Industrial", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "harmful", "[BLANK]", "[BLANK]", "pristine", "natural", "habitats."],
+"blank_answers": {
+"1": "facilities",
+"2": "should",
+"3": "never",
+"4": "discharge",
+"5": "untreated",
+"7": "waste",
+"8": "into"
+},
+"distractor_word": "pollutes",
+"all_shuffled_words": ["into", "untreated", "should", "facilities", "waste", "pollutes", "never", "discharge"]
+},
+{
+"question_number": 8,
+"full_sentence_template": ["Genetic", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "scientists", "[BLANK]", "[BLANK]", "modify", "crop", "DNA."],
+"blank_answers": {
+"1": "engineering",
+"2": "is",
+"3": "a",
+"4": "field",
+"5": "where",
+"7": "precisely",
+"8": "can"
+},
+"distractor_word": "allows",
+"all_shuffled_words": ["field", "allows", "engineering", "is", "where", "can", "a", "precisely"]
+},
+{
+"question_number": 9,
+"full_sentence_template": ["Economic", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "nations", "[BLANK]", "[BLANK]", "cooperative", "trade", "agreements."],
+"blank_answers": {
+"1": "theories",
+"2": "suggest",
+"3": "that",
+"4": "developing",
+"5": "benefit",
+"7": "from",
+"8": "establishing"
+},
+"distractor_word": "gains",
+"all_shuffled_words": ["theories", "benefit", "establishing", "gains", "suggest", "from", "developing", "that"]
+},
+{
+"question_number": 10,
+"full_sentence_template": ["Psychological", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "how", "[BLANK]", "[BLANK]", "influence", "human", "behavior."],
+"blank_answers": {
+"1": "experiments",
+"2": "frequently",
+"3": "examine",
+"4": "social",
+"5": "factors",
+"7": "subtly",
+"8": "they"
+},
+"distractor_word": "affects",
+"all_shuffled_words": ["factors", "subtly", "affects", "examine", "they", "experiments", "frequently", "social"]
+}
+]
