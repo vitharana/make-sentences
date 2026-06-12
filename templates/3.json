@@ -1,0 +1,392 @@
+[
+{
+"question_number": 1,
+"full_sentence_template": [
+"Marine",
+"[BLANK]",
+"[BLANK]",
+"severe",
+"threats",
+"[BLANK]",
+"temperatures",
+"[BLANK]",
+"and",
+"[BLANK]",
+"[BLANK]",
+"undergo",
+"[BLANK]",
+"bleaching."
+],
+"blank_answers": {
+"1": "ecosystems",
+"2": "face",
+"5": "when",
+"7": "rise",
+"9": "coral",
+"10": "reefs",
+"12": "rapid"
+},
+"distractor_word": "ocean",
+"all_shuffled_words": [
+"when",
+"coral",
+"ocean",
+"face",
+"ecosystems",
+"rapid",
+"reefs",
+"rise"
+]
+},
+{
+"question_number": 2,
+"full_sentence_template": [
+"[BLANK]",
+"populations",
+"[BLANK]",
+"[BLANK]",
+"increased",
+"isolation",
+"[BLANK]",
+"living",
+"in",
+"[BLANK]",
+"packed",
+"[BLANK]",
+"[BLANK]",
+"areas."
+],
+"blank_answers": {
+"0": "Urban",
+"2": "often",
+"3": "experience",
+"6": "despite",
+"9": "densely",
+"11": "modern",
+"12": "metropolitan"
+},
+"distractor_word": "lonely",
+"all_shuffled_words": [
+"metropolitan",
+"experience",
+"Urban",
+"lonely",
+"modern",
+"despite",
+"often",
+"densely"
+]
+},
+{
+"question_number": 3,
+"full_sentence_template": [
+"Artificial",
+"[BLANK]",
+"[BLANK]",
+"vast",
+"[BLANK]",
+"to",
+"[BLANK]",
+"train",
+"[BLANK]",
+"machine",
+"[BLANK]",
+"[BLANK]",
+"for",
+"accuracy."
+],
+"blank_answers": {
+"1": "intelligence",
+"2": "requires",
+"4": "datasets",
+"6": "properly",
+"8": "complex",
+"10": "learning",
+"11": "algorithms"
+},
+"distractor_word": "robotics",
+"all_shuffled_words": [
+"algorithms",
+"requires",
+"intelligence",
+"datasets",
+"robotics",
+"complex",
+"learning",
+"properly"
+]
+},
+{
+"question_number": 4,
+"full_sentence_template": [
+"Early",
+"childhood",
+"[BLANK]",
+"[BLANK]",
+"[BLANK]",
+"future",
+"academic",
+"success",
+"[BLANK]",
+"[BLANK]",
+"essential",
+"[BLANK]",
+"[BLANK]",
+"skills."
+],
+"blank_answers": {
+"2": "education",
+"3": "strongly",
+"4": "influences",
+"8": "and",
+"9": "fosters",
+"11": "cognitive",
+"12": "development"
+},
+"distractor_word": "school",
+"all_shuffled_words": [
+"development",
+"and",
+"fosters",
+"school",
+"education",
+"strongly",
+"influences",
+"cognitive"
+]
+},
+{
+"question_number": 5,
+"full_sentence_template": [
+"Massive",
+"[BLANK]",
+"[BLANK]",
+"collapse",
+"[BLANK]",
+"immense",
+"[BLANK]",
+"[BLANK]",
+"to",
+"[BLANK]",
+"incredibly",
+"dense",
+"[BLANK]",
+"holes."
+],
+"blank_answers": {
+"1": "stars",
+"2": "eventually",
+"4": "under",
+"6": "gravitational",
+"7": "forces",
+"9": "form",
+"12": "black"
+},
+"distractor_word": "galaxies",
+"all_shuffled_words": [
+"eventually",
+"forces",
+"galaxies",
+"form",
+"black",
+"under",
+"stars",
+"gravitational"
+]
+},
+{
+"question_number": 6,
+"full_sentence_template": [
+"[BLANK]",
+"civilizations",
+"[BLANK]",
+"intricate",
+"[BLANK]",
+"networks",
+"[BLANK]",
+"vast",
+"[BLANK]",
+"to",
+"[BLANK]",
+"[BLANK]",
+"local",
+"commodities."
+],
+"blank_answers": {
+"0": "Ancient",
+"2": "developed",
+"4": "trade",
+"6": "across",
+"8": "deserts",
+"10": "exchange",
+"11": "precious"
+},
+"distractor_word": "routes",
+"all_shuffled_words": [
+"trade",
+"precious",
+"Ancient",
+"across",
+"routes",
+"deserts",
+"exchange",
+"developed"
+]
+},
+{
+"question_number": 7,
+"full_sentence_template": [
+"[BLANK]",
+"[BLANK]",
+"directly",
+"[BLANK]",
+"consumer",
+"[BLANK]",
+"power",
+"and",
+"[BLANK]",
+"slows",
+"[BLANK]",
+"overall",
+"[BLANK]",
+"growth."
+],
+"blank_answers": {
+"0": "Global",
+"1": "inflation",
+"3": "reduces",
+"5": "purchasing",
+"8": "significantly",
+"10": "down",
+"12": "economic"
+},
+"distractor_word": "money",
+"all_shuffled_words": [
+"inflation",
+"reduces",
+"economic",
+"purchasing",
+"Global",
+"down",
+"money",
+"significantly"
+]
+},
+{
+"question_number": 8,
+"full_sentence_template": [
+"Behavioral",
+"[BLANK]",
+"[BLANK]",
+"treat",
+"[BLANK]",
+"disorders",
+"by",
+"[BLANK]",
+"changing",
+"[BLANK]",
+"[BLANK]",
+"thought",
+"[BLANK]",
+"daily."
+],
+"blank_answers": {
+"1": "therapies",
+"2": "effectively",
+"4": "anxiety",
+"7": "slowly",
+"9": "harmful",
+"10": "habitual",
+"12": "patterns"
+},
+"distractor_word": "doctors",
+"all_shuffled_words": [
+"anxiety",
+"habitual",
+"therapies",
+"harmful",
+"doctors",
+"effectively",
+"patterns",
+"slowly"
+]
+},
+{
+"question_number": 9,
+"full_sentence_template": [
+"[BLANK]",
+"destroys",
+"vital",
+"[BLANK]",
+"[BLANK]",
+"ultimately",
+"[BLANK]",
+"endangered",
+"[BLANK]",
+"populations",
+"to",
+"[BLANK]",
+"[BLANK]",
+"fast."
+],
+"blank_answers": {
+"0": "Deforestation",
+"3": "habitats",
+"4": "which",
+"6": "causes",
+"8": "species",
+"11": "decline",
+"12": "extremely"
+},
+"distractor_word": "animals",
+"all_shuffled_words": [
+"causes",
+"habitats",
+"decline",
+"extremely",
+"which",
+"Deforestation",
+"animals",
+"species"
+]
+},
+{
+"question_number": 10,
+"full_sentence_template": [
+"Tectonic",
+"[BLANK]",
+"[BLANK]",
+"shift",
+"[BLANK]",
+"the",
+"[BLANK]",
+"causing",
+"[BLANK]",
+"earthquakes",
+"[BLANK]",
+"active",
+"[BLANK]",
+"eruptions."
+],
+"blank_answers": {
+"1": "plates",
+"2": "constantly",
+"4": "beneath",
+"6": "crust",
+"8": "massive",
+"10": "alongside",
+"12": "volcanic"
+},
+"distractor_word": "magma",
+"all_shuffled_words": [
+"beneath",
+"alongside",
+"plates",
+"magma",
+"massive",
+"volcanic",
+"constantly",
+"crust"
+]
+}
+]

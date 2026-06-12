@@ -1,0 +1,390 @@
+[
+{
+"question_number": 1,
+"full_sentence_template": [
+"Online",
+"[BLANK]",
+"frequently",
+"offer",
+"[BLANK]",
+"schedules",
+"[BLANK]",
+"allow",
+"[BLANK]",
+"learners",
+"[BLANK]",
+"complete",
+"[BLANK]",
+"[BLANK]"
+],
+"blank_answers": {
+"1": "universities",
+"4": "flexible",
+"6": "that",
+"8": "adult",
+"10": "to",
+"12": "degrees",
+"13": "quickly."
+},
+"distractor_word": "which",
+"all_shuffled_words": [
+"degrees",
+"universities",
+"that",
+"adult",
+"quickly.",
+"which",
+"to",
+"flexible"
+]
+},
+{
+"question_number": 2,
+"full_sentence_template": [
+"Photosynthesis",
+"[BLANK]",
+"green",
+"[BLANK]",
+"to",
+"[BLANK]",
+"solar",
+"energy",
+"[BLANK]",
+"chemical",
+"[BLANK]",
+"during",
+"daylight",
+"[BLANK]"
+],
+"blank_answers": {
+"1": "allows",
+"3": "plants",
+"5": "convert",
+"8": "into",
+"10": "energy",
+"13": "hours."
+},
+"distractor_word": "makes",
+"all_shuffled_words": [
+"energy",
+"makes",
+"plants",
+"into",
+"allows",
+"hours.",
+"convert"
+]
+},
+{
+"question_number": 3,
+"full_sentence_template": [
+"Urban",
+"[BLANK]",
+"usually",
+"experience",
+"[BLANK]",
+"cultural",
+"[BLANK]",
+"due",
+"[BLANK]",
+"high",
+"[BLANK]",
+"of",
+"[BLANK]",
+"[BLANK]"
+],
+"blank_answers": {
+"1": "communities",
+"4": "rapid",
+"6": "changes",
+"8": "to",
+"10": "rates",
+"12": "global",
+"13": "immigration."
+},
+"distractor_word": "although",
+"all_shuffled_words": [
+"rates",
+"changes",
+"global",
+"communities",
+"although",
+"to",
+"rapid",
+"immigration."
+]
+},
+{
+"question_number": 4,
+"full_sentence_template": [
+"Artificial",
+"[BLANK]",
+"systems",
+"[BLANK]",
+"process",
+"[BLANK]",
+"datasets",
+"[BLANK]",
+"identify",
+"[BLANK]",
+"patterns",
+"[BLANK]",
+"[BLANK]",
+"[BLANK]"
+],
+"blank_answers": {
+"1": "intelligence",
+"3": "quickly",
+"5": "massive",
+"7": "to",
+"9": "complex",
+"11": "within",
+"12": "hidden",
+"13": "networks."
+},
+"distractor_word": "because",
+"all_shuffled_words": [
+"massive",
+"quickly",
+"networks.",
+"within",
+"because",
+"to",
+"hidden",
+"complex",
+"intelligence"
+]
+},
+{
+"question_number": 5,
+"full_sentence_template": [
+"Massive",
+"black",
+"[BLANK]",
+"frequently",
+"[BLANK]",
+"surrounding",
+"[BLANK]",
+"matter",
+"[BLANK]",
+"incredibly",
+"[BLANK]",
+"gravitational",
+"[BLANK]",
+"[BLANK]"
+],
+"blank_answers": {
+"2": "holes",
+"4": "absorb",
+"6": "celestial",
+"8": "through",
+"10": "strong",
+"12": "pull",
+"13": "forces."
+},
+"distractor_word": "absorbs",
+"all_shuffled_words": [
+"absorb",
+"forces.",
+"celestial",
+"strong",
+"absorbs",
+"through",
+"holes",
+"pull"
+]
+},
+{
+"question_number": 6,
+"full_sentence_template": [
+"Active",
+"volcanoes",
+"[BLANK]",
+"erupt",
+"[BLANK]",
+"dangerous",
+"[BLANK]",
+"clouds",
+"that",
+"[BLANK]",
+"impact",
+"[BLANK]",
+"weather",
+"[BLANK]"
+],
+"blank_answers": {
+"2": "occasionally",
+"4": "with",
+"6": "ash",
+"9": "severely",
+"11": "local",
+"13": "conditions."
+},
+"distractor_word": "whom",
+"all_shuffled_words": [
+"with",
+"conditions.",
+"ash",
+"whom",
+"local",
+"severely",
+"occasionally"
+]
+},
+{
+"question_number": 7,
+"full_sentence_template": [
+"Ancient",
+"[BLANK]",
+"often",
+"[BLANK]",
+"monumental",
+"[BLANK]",
+"architecture",
+"[BLANK]",
+"honor",
+"[BLANK]",
+"powerful",
+"[BLANK]",
+"[BLANK]",
+"[BLANK]"
+],
+"blank_answers": {
+"1": "civilizations",
+"3": "constructed",
+"5": "stone",
+"7": "to",
+"9": "their",
+"11": "religious",
+"12": "deities",
+"13": "appropriately."
+},
+"distractor_word": "building",
+"all_shuffled_words": [
+"to",
+"stone",
+"religious",
+"appropriately.",
+"civilizations",
+"constructed",
+"building",
+"their",
+"deities"
+]
+},
+{
+"question_number": 8,
+"full_sentence_template": [
+"Global",
+"[BLANK]",
+"quickly",
+"[BLANK]",
+"whenever",
+"[BLANK]",
+"central",
+"[BLANK]",
+"suddenly",
+"[BLANK]",
+"national",
+"interest",
+"[BLANK]",
+"rates."
+],
+"blank_answers": {
+"1": "markets",
+"3": "react",
+"5": "major",
+"7": "banks",
+"9": "adjust",
+"12": "lending"
+},
+"distractor_word": "wherever",
+"all_shuffled_words": [
+"major",
+"react",
+"banks",
+"adjust",
+"lending",
+"wherever",
+"markets"
+]
+},
+{
+"question_number": 9,
+"full_sentence_template": [
+"Cognitive",
+"therapy",
+"[BLANK]",
+"helps",
+"[BLANK]",
+"patients",
+"[BLANK]",
+"unhealthy",
+"[BLANK]",
+"patterns",
+"[BLANK]",
+"stressful",
+"[BLANK]",
+"[BLANK]"
+],
+"blank_answers": {
+"2": "primarily",
+"4": "troubled",
+"6": "recognize",
+"8": "behavioral",
+"10": "during",
+"12": "social",
+"13": "situations."
+},
+"distractor_word": "troubling",
+"all_shuffled_words": [
+"primarily",
+"behavioral",
+"situations.",
+"troubling",
+"recognize",
+"during",
+"troubled",
+"social"
+]
+},
+{
+"question_number": 10,
+"full_sentence_template": [
+"Renewable",
+"[BLANK]",
+"technologies",
+"[BLANK]",
+"provide",
+"[BLANK]",
+"alternatives",
+"[BLANK]",
+"burning",
+"[BLANK]",
+"fossil",
+"[BLANK]",
+"for",
+"[BLANK]"
+],
+"blank_answers": {
+"1": "energy",
+"3": "clearly",
+"5": "sustainable",
+"7": "to",
+"9": "traditional",
+"11": "fuels",
+"13": "electricity."
+},
+"distractor_word": "towards",
+"all_shuffled_words": [
+"traditional",
+"electricity.",
+"to",
+"clearly",
+"fuels",
+"sustainable",
+"energy",
+"towards"
+]
+}
+]

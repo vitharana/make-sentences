@@ -1,0 +1,18 @@
+[
+  {
+    "title": "📚 1",
+    "filePath": "templates/1.json"
+  },
+  {
+    "title": "📚 2",
+    "filePath": "templates/2.json"
+  },
+  {
+    "title": "📚 3",
+    "filePath": "templates/3.json"
+  },
+  {
+    "title": "📚 Set1",
+    "filePath": "templates/set1.json"
+  }
+]

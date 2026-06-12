@@ -1,0 +1,145 @@
+[
+{
+"question_number": 1,
+"full_sentence_template": ["Marine", "[BLANK]", "face", "[BLANK]", "threats", "[BLANK]", "temperatures", "[BLANK]", "and", "[BLANK]", "delicate", "[BLANK]", "reefs."],
+"blank_answers": {
+"1": "ecosystems",
+"3": "severe",
+"5": "when",
+"7": "rise",
+"9": "destroy",
+"11": "coral"
+},
+"distractor_word": "unless",
+"all_shuffled_words": ["severe", "unless", "ecosystems", "rise", "coral", "destroy", "when"]
+},
+{
+"question_number": 2,
+"full_sentence_template": ["Urban", "[BLANK]", "rapidly", "[BLANK]", "as", "[BLANK]", "generations", "[BLANK]", "[BLANK]", "cities", "[BLANK]", "[BLANK]", "opportunities."],
+"blank_answers": {
+"1": "populations",
+"3": "expand",
+"5": "younger",
+"7": "migrate",
+"8": "toward",
+"10": "seeking",
+"11": "better"
+},
+"distractor_word": "fleeing",
+"all_shuffled_words": ["better", "expand", "fleeing", "toward", "populations", "migrate", "seeking", "younger"]
+},
+{
+"question_number": 3,
+"full_sentence_template": ["Artificial", "[BLANK]", "steadily", "[BLANK]", "modern", "workplaces", "[BLANK]", "automating", "[BLANK]", "tasks", "[BLANK]", "[BLANK]", "efficiency."],
+"blank_answers": {
+"1": "intelligence",
+"3": "transforms",
+"6": "by",
+"8": "repetitive",
+"10": "and",
+"11": "boosting"
+},
+"distractor_word": "because",
+"all_shuffled_words": ["transforms", "repetitive", "because", "boosting", "by", "and", "intelligence"]
+},
+{
+"question_number": 4,
+"full_sentence_template": ["Ancient", "[BLANK]", "often", "[BLANK]", "massive", "[BLANK]", "to", "[BLANK]", "their", "[BLANK]", "and", "[BLANK]", "leaders."],
+"blank_answers": {
+"1": "civilizations",
+"3": "constructed",
+"5": "monuments",
+"7": "honor",
+"9": "deities",
+"11": "influential"
+},
+"distractor_word": "building",
+"all_shuffled_words": ["constructed", "monuments", "honor", "civilizations", "building", "influential", "deities"]
+},
+{
+"question_number": 5,
+"full_sentence_template": ["Distant", "[BLANK]", "constantly", "[BLANK]", "away", "[BLANK]", "Earth", "[BLANK]", "to", "[BLANK]", "expanding", "[BLANK]", "universe."],
+"blank_answers": {
+"1": "galaxies",
+"3": "accelerate",
+"5": "from",
+"7": "due",
+"9": "the",
+"11": "unseen"
+},
+"distractor_word": "towards",
+"all_shuffled_words": ["from", "accelerate", "unseen", "towards", "due", "galaxies", "the"]
+},
+{
+"question_number": 6,
+"full_sentence_template": ["Interactive", "learning", "[BLANK]", "help", "[BLANK]", "retain", "[BLANK]", "information", "[BLANK]", "[BLANK]", "traditional", "[BLANK]", "methods."],
+"blank_answers": {
+"2": "environments",
+"4": "students",
+"6": "complex",
+"8": "better",
+"9": "than",
+"11": "lecture"
+},
+"distractor_word": "then",
+"all_shuffled_words": ["better", "then", "lecture", "environments", "students", "than", "complex"]
+},
+{
+"question_number": 7,
+"full_sentence_template": ["Global", "inflation", "[BLANK]", "usually", "[BLANK]", "widespread", "[BLANK]", "among", "[BLANK]", "[BLANK]", "[BLANK]", "financial", "[BLANK]"],
+"blank_answers": {
+"2": "rates",
+"4": "trigger",
+"6": "panic",
+"8": "investors",
+"9": "within",
+"10": "fragile",
+"12": "markets."
+},
+"distractor_word": "causing",
+"all_shuffled_words": ["investors", "fragile", "markets.", "trigger", "panic", "causing", "within", "rates"]
+},
+{
+"question_number": 8,
+"full_sentence_template": ["Childhood", "[BLANK]", "significantly", "[BLANK]", "adult", "[BLANK]", "traits", "and", "[BLANK]", "future", "[BLANK]", "relationship", "[BLANK]"],
+"blank_answers": {
+"1": "memories",
+"3": "shape",
+"5": "personality",
+"8": "influence",
+"10": "interpersonal",
+"12": "dynamics."
+},
+"distractor_word": "forming",
+"all_shuffled_words": ["memories", "dynamics.", "personality", "interpersonal", "forming", "shape", "influence"]
+},
+{
+"question_number": 9,
+"full_sentence_template": ["Chemical", "[BLANK]", "essentially", "[BLANK]", "the", "[BLANK]", "energy", "[BLANK]", "for", "[BLANK]", "reactions", "[BLANK]", "[BLANK]"],
+"blank_answers": {
+"1": "catalysts",
+"3": "lower",
+"5": "activation",
+"7": "required",
+"9": "complex",
+"11": "to",
+"12": "proceed."
+},
+"distractor_word": "increasing",
+"all_shuffled_words": ["complex", "catalysts", "activation", "proceed.", "increasing", "to", "required", "lower"]
+},
+{
+"question_number": 10,
+"full_sentence_template": ["Renewable", "energy", "[BLANK]", "gradually", "[BLANK]", "fossil", "[BLANK]", "to", "[BLANK]", "severe", "[BLANK]", "climate", "[BLANK]"],
+"blank_answers": {
+"2": "sources",
+"4": "replace",
+"6": "fuels",
+"8": "mitigate",
+"10": "global",
+"12": "change."
+},
+"distractor_word": "create",
+"all_shuffled_words": ["sources", "global", "mitigate", "replace", "change.", "create", "fuels"]
+}
+]

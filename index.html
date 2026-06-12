@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEFL Fill-in-the-Blanks Trainer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #app-container {
+            width: 100%;
+            max-width: 850px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 2px solid #007bff;
+            background: #fff;
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .header-status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        #timer {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d9534f;
+            background: #fdf2f2;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        .sentence-display {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            line-height: 2.5;
+            margin: 30px 0;
+            font-size: 1.15rem;
+        }
+        .static-word {
+            color: #333;
+            font-weight: 500;
+        }
+        .blank-slot {
+            width: 120px;
+            height: 35px;
+            border-bottom: 3px solid #007bff;
+            background: #f0f4f8;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px 4px 0 0;
+            transition: background 0.2s;
+        }
+        .word-bank {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            min-height: 50px;
+            padding: 15px;
+            background: #fafafa;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .word-card {
+            background: #007bff;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 4px;
+            cursor: grab;
+            user-select: none;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background-color: #218838; }
+        .hidden { display: none !important; }
+        .score-display { font-size: 3rem; font-weight: bold; color: #007bff; margin: 20px 0; }
+        
+        .dashboard-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th { background-color: #f2f2f2; font-weight: 600; }
+        .high-score { color: #28a745; font-weight: bold; }
+
+        .review-container {
+            text-align: left;
+            margin-top: 30px;
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+        }
+        .review-item {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ccc;
+        }
+        .review-item.correct { border-left-color: #28a745; }
+        .review-item.incorrect { border-left-color: #dc3545; }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 4px;
+            color: white;
+            margin-bottom: 8px;
+        }
+        .badge.correct { background-color: #28a745; }
+        .badge.incorrect { background-color: #dc3545; }
+        .sentence-line { margin: 5px 0; font-size: 1rem; }
+        .label { font-weight: bold; color: #555; }
+    </style>
+</head>
+<body>
+
+<div id="app-container">
+    <div id="loader-screen">
+        <h2>TOEFL Template Control Center</h2>
+        
+        <div id="history-vault-zone">
+            <label style="font-weight: bold; color: #444; display: block; margin-bottom: 8px; font-size: 1.1rem;">Choose a Practice Session:</label>
+            <select id="saved-templates-dropdown" onchange="loadSelectedTemplate()">
+                <option value="">-- Loading Existing Templates... --</option>
+            </select>
+        </div>
+
+        <div class="dashboard-section">
+            <h3>📈 Your Performance History</h3>
+            <div id="stats-placeholder" style="color:#777; font-style:italic;">No test history found yet. Complete a test session to track your metrics!</div>
+            <table id="stats-table" class="hidden">
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Template Reference</th>
+                        <th>Score</th>
+                        <th>Time Spent</th>
+                    </tr>
+                </thead>
+                <tbody id="stats-tbody"></tbody>
+            </table>
+            <button id="clear-stats-btn" onclick="clearPerformanceHistory()" style="background-color: #d9534f; padding: 6px 12px; font-size: 0.85rem; margin-top: 10px;" class="hidden">Clear History</button>
+        </div>
+    </div>
+
+    <div id="test-screen" class="hidden">
+        <div class="header-status">
+            <div>Question: <span id="q-num">1</span>/<span id="q-total">10</span></div>
+            <div id="timer">Time Left: 06:00</div>
+        </div>
+
+        <p style="color: #666;">Drag words from the bank into the blank underlined spaces to complete the sentence structure.</p>
+
+        <div id="sentence-container" class="sentence-display"></div>
+
+        <div style="font-size: 0.9rem; color: #888; margin-bottom: 5px;">WORD BANK (Includes 1 Distractor):</div>
+        <div id="word-bank" class="word-bank" ondragover="allowDrop(event)" ondrop="dropToBank(event)"></div>
+
+        <div style="text-align: right;">
+            <button onclick="submitAnswer()">Submit & Next</button>
+        </div>
+    </div>
+
+    <div id="results-screen" class="hidden" style="text-align: center;">
+        <h2>Session Complete!</h2>
+        <div class="score-display"><span id="final-score">0</span> / <span id="score-total">10</span></div>
+        <p id="time-taken-msg"></p>
+        
+        <button onclick="location.reload()" style="background-color: #007bff; margin-bottom: 20px;">Return to Main Menu</button>
+        
+        <div class="review-container">
+            <h3>Performance Review</h3>
+            <div id="review-list"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+let sessionData = [];
+let currentQuestionIndex = 0;
+let totalScore = 0;
+let timeLeft = 360; 
+let timerInterval = null;
+let userHistory = [];
+let targetTemplateLabel = "Existing Template Set";
+let folderTemplates = [];
+
+window.onload = function() {
+    loadManifestAndRender();
+    renderPerformanceHistory();
+};
+
+// Fetches the manifest file and lists existing files to the user
+async function loadManifestAndRender() {
+    const dropdown = document.getElementById('saved-templates-dropdown');
+    dropdown.innerHTML = '<option value="">-- Choose a Practice Set --</option>';
+
+    try {
+        const response = await fetch('templates/manifest.json');
+        if (response.ok) {
+            folderTemplates = await response.json();
+            folderTemplates.forEach((item, index) => {
+                const opt = document.createElement('option');
+                opt.value = index;
+                opt.innerText = item.title;
+                dropdown.appendChild(opt);
+            });
+        } else {
+            dropdown.innerHTML = '<option value="">⚠️ manifest.json missing. Run your generator script!</option>';
+            console.warn("manifest.json not found in templates folder.");
+        }
+    } catch (err) {
+        dropdown.innerHTML = '<option value="">⚠️ Error loading templates registry.</option>';
+        console.error("Error loading templates manifest folder config:", err);
+    }
+}
+
+// Automatically pulls down the chosen text JSON asset and immediately fires up the test environment
+async function loadSelectedTemplate() {
+    const dropdown = document.getElementById('saved-templates-dropdown');
+    const val = dropdown.value;
+    if (val === "") return;
+    
+    const chosenTemplate = folderTemplates[parseInt(val)];
+    targetTemplateLabel = chosenTemplate.title;
+
+    try {
+        const fileResponse = await fetch(chosenTemplate.filePath);
+        if (!fileResponse.ok) throw new Error("Could not locate the template file structure.");
+        
+        sessionData = await fileResponse.json();
+        
+        // Reset and launch session variables
+        if (timerInterval) clearInterval(timerInterval);
+        currentQuestionIndex = 0;
+        totalScore = 0;
+        timeLeft = 360;
+        userHistory = [];
+
+        document.getElementById('loader-screen').classList.add('hidden');
+        document.getElementById('test-screen').classList.remove('hidden');
+        loadQuestion(currentQuestionIndex);
+        timerInterval = setInterval(updateTimer, 1000);
+    } catch (err) {
+        alert("Error pulling template file contents: " + err.message);
+        dropdown.value = "";
+    }
+}
+
+function renderPerformanceHistory() {
+    let logVault = JSON.parse(localStorage.getItem('toefl_performance_logs')) || [];
+    const table = document.getElementById('stats-table');
+    const tbody = document.getElementById('stats-tbody');
+    const placeholder = document.getElementById('stats-placeholder');
+    const clearBtn = document.getElementById('clear-stats-btn');
+
+    if(logVault.length > 0) {
+        placeholder.classList.add('hidden');
+        table.classList.remove('hidden');
+        clearBtn.classList.remove('hidden');
+        tbody.innerHTML = '';
+
+        logVault.slice().reverse().forEach(log => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${log.date}</td>
+                <td>${log.templateName}</td>
+                <td class="${log.score >= (log.totalQ || 10) * 0.8 ? 'high-score' : ''}">${log.score} / ${log.totalQ || 10}</td>
+                <td>${log.timeSpent}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    } else {
+        placeholder.classList.remove('hidden');
+        table.classList.add('hidden');
+        clearBtn.classList.add('hidden');
+    }
+}
+
+function clearPerformanceHistory() {
+    if(confirm("Are you sure you want to delete all historical tracking scores?")) {
+        localStorage.removeItem('toefl_performance_logs');
+        renderPerformanceHistory();
+    }
+}
+
+function allowDrop(e) { e.preventDefault(); }
+
+function loadQuestion(index) {
+    if (index >= sessionData.length) { return endSession(); }
+
+    document.getElementById('q-num').innerText = index + 1;
+    document.getElementById('q-total').innerText = sessionData.length;
+    
+    const container = document.getElementById('sentence-container');
+    const bank = document.getElementById('word-bank');
+    
+    container.innerHTML = '';
+    bank.innerHTML = '';
+
+    const currentQuestion = sessionData[index];
+
+    currentQuestion.full_sentence_template.forEach((word, wordIndex) => {
+        if (word === "[BLANK]") {
+            const slot = document.createElement('div');
+            slot.className = 'blank-slot';
+            slot.dataset.blankId = wordIndex;
+            slot.setAttribute('ondragover', 'allowDrop(event)');
+            slot.setAttribute('ondrop', 'dropToSlot(event)');
+            container.appendChild(slot);
+        } else {
+            const span = document.createElement('span');
+            span.className = 'static-word';
+            span.innerText = word;
+            container.appendChild(span);
+        }
+    });
+
+    currentQuestion.all_shuffled_words.forEach((word, idx) => {
+        const wordEl = document.createElement('div');
+        wordEl.className = 'word-card';
+        wordEl.innerText = word;
+        wordEl.id = `word-${index}-${idx}`;
+        wordEl.draggable = true;
+        wordEl.addEventListener('dragstart', (e) => e.dataTransfer.setData('text', e.target.id));
+        bank.appendChild(wordEl);
+    });
+}
+
+function dropToSlot(e) {
+    e.preventDefault();
+    const id = e.dataTransfer.getData('text');
+    const card = document.getElementById(id);
+    let target = e.target;
+    
+    if (target.classList.contains('word-card')) return; 
+    if (target.classList.contains('blank-slot') && target.children.length === 0) {
+        target.appendChild(card);
+    }
+}
+
+function dropToBank(e) {
+    e.preventDefault();
+    const id = e.dataTransfer.getData('text');
+    const card = document.getElementById(id);
+    document.getElementById('word-bank').appendChild(card);
+}
+
+function submitAnswer() {
+    const currentQuestion = sessionData[currentQuestionIndex];
+    let isQuestionPerfect = true;
+    let userConstructedSentence = [];
+
+    currentQuestion.full_sentence_template.forEach((word, wordIndex) => {
+        if (word === "[BLANK]") {
+            const slot = document.querySelector(`.blank-slot[data-blank-id="${wordIndex}"]`);
+            const userWord = slot && slot.children.length > 0 ? slot.children[0].innerText : "____";
+            userConstructedSentence.push(userWord);
+
+            if (userWord !== currentQuestion.blank_answers[wordIndex]) {
+                isQuestionPerfect = false;
+            }
+        } else {
+            userConstructedSentence.push(word);
+        }
+    });
+
+    if (isQuestionPerfect) totalScore++;
+
+    userHistory.push({
+        questionNumber: currentQuestionIndex + 1,
+        isCorrect: isQuestionPerfect,
+        userSentence: userConstructedSentence.join(" "),
+        correctSentence: currentQuestion.full_sentence_template.map((w, idx) => currentQuestion.blank_answers[idx] || w).join(" ")
+    });
+
+    currentQuestionIndex++;
+    loadQuestion(currentQuestionIndex);
+}
+
+function updateTimer() {
+    timeLeft--;
+    let min = Math.floor(timeLeft / 60);
+    let sec = timeLeft % 60;
+    document.getElementById('timer').innerText = `Time Left: ${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+    if (timeLeft <= 0) {
+        while(userHistory.length < sessionData.length) {
+            let index = userHistory.length;
+            let currentQuestion = sessionData[index];
+            userHistory.push({
+                questionNumber: index + 1,
+                isCorrect: false,
+                userSentence: "[Not Attempted - Time Expired]",
+                correctSentence: currentQuestion.full_sentence_template.map((w, idx) => currentQuestion.blank_answers[idx] || w).join(" ")
+            });
+        }
+        endSession();
+    }
+}
+
+function endSession() {
+    clearInterval(timerInterval);
+    document.getElementById('test-screen').classList.add('hidden');
+    document.getElementById('results-screen').classList.remove('hidden');
+    
+    document.getElementById('final-score').innerText = totalScore;
+    document.getElementById('score-total').innerText = sessionData.length;
+    
+    let minSpent = Math.floor((360 - timeLeft) / 60);
+    let secSpent = (360 - timeLeft) % 60;
+    let timeString = `${minSpent}m ${secSpent}s`;
+    document.getElementById('time-taken-msg').innerText = `Time spent: ${timeString}`;
+
+    let logVault = JSON.parse(localStorage.getItem('toefl_performance_logs')) || [];
+    logVault.push({
+        date: new Date().toLocaleString(),
+        templateName: targetTemplateLabel,
+        score: totalScore,
+        totalQ: sessionData.length,
+        timeSpent: timeString
+    });
+    localStorage.setItem('toefl_performance_logs', JSON.stringify(logVault));
+
+    const reviewListEl = document.getElementById('review-list');
+    reviewListEl.innerHTML = '';
+
+    userHistory.forEach(item => {
+        const itemEl = document.createElement('div');
+        itemEl.className = `review-item ${item.isCorrect ? 'correct' : 'incorrect'}`;
+        itemEl.innerHTML = `
+            <div class="badge ${item.isCorrect ? 'correct' : 'incorrect'}">
+                Question ${item.questionNumber}: ${item.isCorrect ? 'CORRECT' : 'INCORRECT'}
+            </div>
+            <div class="sentence-line"><span class="label">Your Answer:</span> ${item.userSentence}</div>
+            ${!item.isCorrect ? `<div class="sentence-line"><span class="label" style="color: #28a745;">Correct Sentence:</span> <strong>${item.correctSentence}</strong></div>` : ''}
+        `;
+        reviewListEl.appendChild(itemEl);
+    });
+}
+</script>
+</body>
+</html>
