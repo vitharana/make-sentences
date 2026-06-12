@@ -1,0 +1,146 @@
+[
+{
+"question_number": 1,
+"full_sentence_template": ["Modern", "[BLANK]", "[BLANK]", "the", "[BLANK]", "[BLANK]", "to", "[BLANK]", "[BLANK]", "against", "specific", "viral", "pathogens."],
+"blank_answers": {
+"1": "vaccines",
+"2": "stimulate",
+"4": "immune",
+"5": "system",
+"7": "produce",
+"8": "antibodies"
+},
+"distractor_word": "producing",
+"all_shuffled_words": ["antibodies", "system", "producing", "vaccines", "produce", "immune", "stimulate"]
+},
+{
+"question_number": 2,
+"full_sentence_template": ["Rapid", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "banks", "to", "[BLANK]", "[BLANK]", "[BLANK]", "to", "stabilize", "prices."],
+"blank_answers": {
+"1": "inflation",
+"2": "often",
+"3": "forces",
+"4": "central",
+"7": "raise",
+"8": "interest",
+"9": "rates"
+},
+"distractor_word": "forcing",
+"all_shuffled_words": ["forces", "central", "rates", "inflation", "forcing", "raise", "interest", "often"]
+},
+{
+"question_number": 3,
+"full_sentence_template": ["Nomadic", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "animal", "[BLANK]", "[BLANK]", "vast", "continental", "grassland", "ecosystems."],
+"blank_answers": {
+"1": "tribes",
+"2": "traditionally",
+"3": "followed",
+"4": "migrating",
+"6": "herds",
+"7": "across"
+},
+"distractor_word": "migration",
+"all_shuffled_words": ["migrating", "across", "tribes", "migration", "herds", "traditionally", "followed"]
+},
+{
+"question_number": 4,
+"full_sentence_template": ["Quantum", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "principles", "[BLANK]", "[BLANK]", "[BLANK]", "mathematical", "equations", "instantly."],
+"blank_answers": {
+"1": "computers",
+"2": "utilize",
+"3": "complex",
+"4": "physical",
+"6": "to",
+"7": "solve",
+"8": "complicated"
+},
+"distractor_word": "solves",
+"all_shuffled_words": ["utilize", "solve", "solves", "computers", "complex", "complicated", "physical", "to"]
+},
+{
+"question_number": 5,
+"full_sentence_template": ["Deforestation", "[BLANK]", "[BLANK]", "forest", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "habitats", "for", "endangered", "wildlife."],
+"blank_answers": {
+"1": "destroys",
+"2": "critical",
+"4": "canopies",
+"5": "that",
+"6": "provide",
+"7": "natural"
+},
+"distractor_word": "destroying",
+"all_shuffled_words": ["critical", "natural", "destroying", "destroys", "provide", "canopies", "that"]
+},
+{
+"question_number": 6,
+"full_sentence_template": ["Classical", "[BLANK]", "[BLANK]", "[BLANK]", "the", "[BLANK]", "[BLANK]", "[BLANK]", "of", "its", "contemporary", "society."],
+"blank_answers": {
+"1": "literature",
+"2": "frequently",
+"3": "reflects",
+"5": "underlying",
+"6": "moral",
+"7": "philosophies"
+},
+"distractor_word": "reflecting",
+"all_shuffled_words": ["philosophies", "reflects", "frequently", "reflecting", "literature", "moral", "underlying"]
+},
+{
+"question_number": 7,
+"full_sentence_template": ["Tectonic", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "the", "[BLANK]", "[BLANK]", "through", "frequent", "seismic", "activity."],
+"blank_answers": {
+"1": "plate",
+"2": "movements",
+"3": "continuously",
+"4": "reshape",
+"6": "terrestrial",
+"7": "surface"
+},
+"distractor_word": "reshapes",
+"all_shuffled_words": ["reshape", "movements", "reshapes", "plate", "continuously", "surface", "terrestrial"]
+},
+{
+"question_number": 8,
+"full_sentence_template": ["Supernova", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "vast", "distances", "in", "outer", "space."],
+"blank_answers": {
+"1": "explosions",
+"2": "disperse",
+"3": "essential",
+"4": "heavy",
+"5": "elements",
+"6": "across"
+},
+"distractor_word": "disperses",
+"all_shuffled_words": ["across", "essential", "explosions", "heavy", "disperses", "disperse", "elements"]
+},
+{
+"question_number": 9,
+"full_sentence_template": ["Prolonged", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "and", "[BLANK]", "overall", "cognitive", "performance."],
+"blank_answers": {
+"1": "psychological",
+"2": "stress",
+"3": "negatively",
+"4": "impacts",
+"5": "memory",
+"6": "retention",
+"8": "diminishes"
+},
+"distractor_word": "impacting",
+"all_shuffled_words": ["retention", "psychological", "impacting", "impacts", "memory", "negatively", "diminishes", "stress"]
+},
+{
+"question_number": 10,
+"full_sentence_template": ["Modern", "[BLANK]", "[BLANK]", "[BLANK]", "strong", "[BLANK]", "[BLANK]", "[BLANK]", "[BLANK]", "heavy", "vehicular", "traffic", "safely."],
+"blank_answers": {
+"1": "suspension",
+"2": "bridges",
+"3": "utilize",
+"5": "steel",
+"6": "cables",
+"7": "to",
+"8": "support"
+},
+"distractor_word": "utilizes",
+"all_shuffled_words": ["to", "suspension", "cables", "bridges", "utilize", "steel", "utilizes", "support"]
+}
+]
